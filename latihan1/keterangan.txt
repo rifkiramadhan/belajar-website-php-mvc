@@ -1,3 +1,27 @@
----- Keterangan Latihan 1 ----
+---- Keterangan Latihan 1 (Membuat Struktur Folder dan File MVC) ----
 
-1. Pengertian
+1. Rangkuman
+   - Alamat utama aplikasi MVC yang dibuat adalah folder public, dan folder app tidak akan bisa diakses oleh user
+   - require_once '../app/init.php';
+     - Teknik ini disebut sebagai Bootstraping, dimana kita dapat memanggil 1 file kemudian file itu akan memanggil
+       seluruh aplikasi MVC nya
+   - Membuat penamaan file huruf besar karena nanti filenya adalah untuk menyimpan class pembentuk MVC
+   - Class Controller adalah class utama, sedangkan class-class yang dibuat di dalam folder controllers adalah Controller
+     yang akan extends ke dalam kelas Controller utama, karena class Controller utama adalah yang mengatur class yang
+     akan dibuat pada folder controllers
+
+2. Struktur Folder dan File MVC Sederhana
+   - app
+     - controllers
+     - core
+       * App.php
+       * Controller.php
+     - models
+     - views
+       - home
+     * init.php
+   - public
+     - css
+     - img
+     - js
+     * index.php
