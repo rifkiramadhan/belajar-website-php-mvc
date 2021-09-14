@@ -1,8 +1,9 @@
----- Keterangan Latihan 2 (Routing) ----
+---- Keterangan Latihan 3 (Controller) ----
 
 1. Pengertian
-   - Routing
-     - Mengubah URL yang ditulis menjadi elemen-elemen pada array
+   - Controller
+     - Mengubah URL yang menjadi elemen-elemen array kemudian dihubungkan ke controller method dan parameter untuk
+       tiap-tiap halamannya
 
 2. Rangkuman
    - File htaccess
@@ -23,9 +24,11 @@
            - Berfungsi untuk membuat aturan apapun karakternya yang ditulis kecuali enter sampai habis akan di simpan ke url yang ada
            - Artinya jika ada rule / aturan yang sudah terpenuhi maka jangan jalankn rule lain setelah rule ini, jadi ini dilakukan
              ketika ada orang yang ingin melakukan sesuatu yang jahat
-      - rtrim(str)
-        - Berfungsi untuk membersihkan URL supaya tidak ada tanda slash(/) di akhir dari URL nya
-      - filter_var(variable, FILTER_SANITIZE_URL)
-        - Berfungsi untuk membersihkan URL dari karakter-karakter yang aneh atau yang memungkinkan URL kita di hack
-      - explode(delimiter, string)
-        - Berfungsi untuk memecah URL berdasarkan tanda slash(/)
+   - rtrim(str)
+     - Berfungsi untuk membersihkan URL supaya tidak ada tanda slash(/) di akhir dari URL nya
+   - filter_var(variable, FILTER_SANITIZE_URL)
+     - Berfungsi untuk membersihkan URL dari karakter-karakter yang aneh atau yang memungkinkan URL kita di hack
+   - explode(delimiter, string)
+     - Berfungsi untuk memecah URL berdasarkan tanda slash(/)
+   - call_user_func_array()
+     - Berfungsi untuk menjalankan controller dan method serta mengirimkan parameter
