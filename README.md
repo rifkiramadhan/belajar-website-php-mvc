@@ -26,18 +26,18 @@
            kesulitan lagi memahami konsep MVC nya
          - Jadi banyak framework yang sudah menerapkan kosep MVC walaupun arsitekturnya berbeda
    ### Struktur Materi MVC
-       - [x] Pendahuluan & Persiapan
-       - [x] Routing
-       - [x] Controller
-       - [x] View
-       - [x] Assets
-       - [x] Model
-       - [x] Database Wrapper
-       - [x] Insert Data
-       - [x] Flash Message
-       - [x] DeleteData
-       - [x] Update Data (+ ajax)
-       - [x] Searching
+       1. Pendahuluan & Persiapan
+       2. Routing
+       3. Controller
+       4. View
+       5. Assets
+       6. Model
+       7. Database Wrapper
+       8. Insert Data
+       9. Flash Message
+       10 DeleteData
+       11. Update Data (+ ajax)
+       12. Searching
    ### Apa Yang Akan Kita Buat ?
        - Sebuah aplikasi sederhana, bukan aplikasi yang utuh artinya tidak akan jalan 100%, tetapi minimal kita bisa 
          mengetahui nanti bagaimana konsep MVC yang diterapkan di aplikasi kita, dan kedepannya juga dapat dilengkapi
