@@ -35,7 +35,7 @@
        7. Database Wrapper
        8. Insert Data
        9. Flash Message
-       10 DeleteData
+       10. DeleteData
        11. Update Data (+ ajax)
        12. Searching
    ### Apa Yang Akan Kita Buat ?
