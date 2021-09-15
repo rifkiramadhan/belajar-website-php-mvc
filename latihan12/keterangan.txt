@@ -1,0 +1,48 @@
+---- Keterangan Latihan 12 (Searching) ----
+
+1. Pengertian
+   - Searching
+     - Berfungsi untuk mencari daftar mahasiswa yang ketika dicari sangat simple berdasarkan nama saja
+2. Rangkuman
+   - File htaccess
+     - Adalah file yang bisa digunakan untuk memodifikasi konfigurasi dari server appache kita, dan itu bisa kita lakukan
+       per folder
+     - Options -Indexes
+       - Berfungsi ketika ada user yang membuka folder app dan folder-folder di dalamnya, selama di dalam folder itu tidak ada
+         file index apapun itu, maka jangan tampilkan isi foldernya dan block aksesnya
+     - Options -Multiviews
+       - Berfungsi untuk menghindari kesalahan atau ambigu ketika kita memanggil folder atau file di dalam folder public
+     - RewriteEngine On
+       - Berfungsi untuk menulis ulang URL yang ada pada browser kita, proses rewrite memiliki beberapa konfigurasi, yaitu
+         - RewriteCond %{REQUEST_FILENAME} !-d
+           - Berfungsi untuk ketika URL yang ditulis merupakan folder maka akan di abaikan
+         - RewriteCond %{REQUEST_FILENAME} !-f
+           - Berfungsi untuk menghindari ketika ada nama folder atau nama file yang sama dengan controller dan method kita
+         - RewriteRules ^(.*)$ (Ditulis dengan expresi reguler / REGEX Expression)
+           - Berfungsi untuk membuat aturan apapun karakternya yang ditulis kecuali enter sampai habis akan di simpan ke url yang ada
+           - Artinya jika ada rule / aturan yang sudah terpenuhi maka jangan jalankn rule lain setelah rule ini, jadi ini dilakukan
+             ketika ada orang yang ingin melakukan sesuatu yang jahat
+   - rtrim(str)
+     - Berfungsi untuk membersihkan URL supaya tidak ada tanda slash(/) di akhir dari URL nya
+   - filter_var(variable, FILTER_SANITIZE_URL)
+     - Berfungsi untuk membersihkan URL dari karakter-karakter yang aneh atau yang memungkinkan URL kita di hack
+   - explode(delimiter, string)
+     - Berfungsi untuk memecah URL berdasarkan tanda slash(/)
+   - call_user_func_array()
+     - Berfungsi untuk menjalankan controller dan method serta mengirimkan parameter
+   - Absolute URL
+     - Mengarahkan URL dari mulai server kita
+       - http://localhost/Belajar%20PHP%20MVC/latihan5/public/css
+   - PDO (PHP Data Object)
+     - Dengan menggunakan PDO ini lebih flexible ketika kedepannya ingin mengganti database bukan dengan menggunakan
+       MySQL lagi, tetapi dengan PDO akan lebih mudah daripada menggunakan driver msqli, jadi caranya harus membuat
+       variable terlebih dahulu untuk menampung koneksi PDO nya
+       - $dbh (Database Handler)
+         - Berfungsi untuk menampung koneksi ke dalam database
+       - $stmt (Statement)
+         - Berfungsi untuk menyimpan query
+     - Jika menggunakan PDO maka query nya harus di prepare terlebih dahulu kemudian kita masukkan query nya
+   - $Option
+     - Biasa digunakan ketika kita ingin mengoptimasi koneksi ke dalam database kita
+   - Modal Box
+     - Adalah elemen yang akan muncul ketika kita trigger menggunakan tombol biasanya
